@@ -2,25 +2,21 @@ import java.time.LocalDate;
 
 public class Admin extends User {
 
-    private String role;
+    //Constructor
+    public Admin() {
+        super();
+    }
 
     public Admin(String name, int year, int month, int day) {
         super(name, year, month, day);
-        this.role = "Admin";
     }
 
-
-    // Getter
-
-    public String getRole() {
-        return role;
-    }
 
     //OverRide
 
     public void displayInfo() {
         super.displayInfo();
-        System.out.println("User type: " + getRole());
+        System.out.println("User type: Admin");
     }
 
     //OverLoading

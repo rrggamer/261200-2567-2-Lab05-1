@@ -2,8 +2,8 @@ import java.time.LocalDate;
 
 public class User {
 
-    private String name;
-    private LocalDate dob;
+    protected String name;
+    protected LocalDate dob;
 
     //Constructor
     public User(){
